@@ -10,4 +10,12 @@ describe "fizz_buzz" do  #"fizz_buzz" must match our "fizz_buzz.rb" file name?
         expect(fizz_buzz(3)).to eq 'fizz'
     end
 
+    it "returns 'buzz' if number is divisible by 5" do
+        expect(fizz_buzz(5)).to eq 'buzz'
+    end
+
+    it "returns 'fizz-buzz' if number is divisible by 15" do
+        expect(fizz_buzz(15)).to eq 'fizz-buzz'
+    end
+
 end
